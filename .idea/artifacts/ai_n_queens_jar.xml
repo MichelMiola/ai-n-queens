@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ai-n-queens:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ai_n_queens_jar</output-path>
+    <root id="archive" name="ai-n-queens.jar">
+      <element id="module-output" name="ai-n-queens" />
+    </root>
+  </artifact>
+</component>

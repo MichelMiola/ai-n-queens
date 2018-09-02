@@ -24,7 +24,7 @@
                 <TabPane tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                    <tabs>
    
-                       <Tab text="N-Queens Puzzle">
+                       <Tab text="N-Rainhas">
                            <content>
                                <SplitPane fx:id="splitWordList" dividerPositions="0.65">
                                    <items>
@@ -64,7 +64,7 @@
                                                    <children>
                                                       <Button id="hillClimbingBtn" layoutX="40.0" layoutY="108.0" mnemonicParsing="false" onAction="#runHillClimbing" prefWidth="162.0" text="Run Hill Climbing" />
                                                       <TextField id="hcIterations" fx:id="hcIterations" layoutX="15.0" layoutY="41.0" prefHeight="39.0" prefWidth="218.0" text="50000" />
-                                                      <Label layoutX="14.0" layoutY="14.0" text="Max Number of Iterations" />
+                                                      <Label layoutX="14.0" layoutY="14.0" text="Número máximo de iterações" />
                                                    </children>
                                                 </AnchorPane>
                                           </content>
@@ -74,9 +74,9 @@
                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                                    <children>
                                                       <Button id="simulatedAnnealingBtn" layoutX="12.0" layoutY="227.0" mnemonicParsing="false" onAction="#runSimulatedAnnealing" prefWidth="225.0" text="Run Simulated Annealing" />
-                                                      <Label layoutX="23.0" layoutY="1.0" text="Max Number of Iterations" />
-                                                      <Label layoutX="23.0" layoutY="67.0" text="Temperature" />
-                                                      <Label layoutX="23.0" layoutY="133.0" text="Cooling Factor" />
+                                                      <Label layoutX="23.0" layoutY="1.0" text="Número máximo de iterações" />
+                                                      <Label layoutX="23.0" layoutY="67.0" text="Temperatura" />
+                                                      <Label layoutX="23.0" layoutY="133.0" text="Fator de resfriamento" />
                                                       <TextField id="saIterations" fx:id="saIterations" layoutX="12.0" layoutY="28.0" text="50000" />
                                                       <TextField id="saTemperature" fx:id="saTemperature" layoutX="14.0" layoutY="94.0" text="120" />
                                                       <TextField id="saCoolingFactor" fx:id="saCoolingFactor" layoutX="12.0" layoutY="160.0" text="0.95" />
@@ -84,34 +84,6 @@
                                                 </AnchorPane>
                                           </content>
                                         </TitledPane>
-                                        <TitledPane animated="false" text="Local Beam Search">
-                                          <content>
-                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                                   <children>
-                                                      <Button id="localBeamSearchBtn" layoutX="20.0" layoutY="167.0" mnemonicParsing="false" onAction="#runLocalBeamSearch" text="Run Local Beam Search" />
-                                                      <TextField id="lbIterations" fx:id="lbIterations" layoutX="12.0" layoutY="38.0" text="50000" />
-                                                      <TextField id="lbStates" fx:id="lbStates" layoutX="12.0" layoutY="119.0" text="5" />
-                                                      <Label layoutX="14.0" layoutY="14.0" text="Max Number of Iterations" />
-                                                      <Label layoutX="12.0" layoutY="84.0" text="Number of States" />
-                                                   </children>
-                                                </AnchorPane>
-                                          </content>
-                                        </TitledPane>
-                                          <TitledPane animated="false" layoutX="10.0" layoutY="88.0" text="Genetic Algorithm">
-                                             <content>
-                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                                   <children>
-                                                      <Button id="geneticAlgorithmBtn" layoutX="24.0" layoutY="219.0" mnemonicParsing="false" onAction="#runGeneticAlgorithm" text="Run Genetic Algorithm" />
-                                                      <Label layoutX="24.0" layoutY="77.0" text="Mutation Probability" />
-                                                      <Label layoutX="24.0" layoutY="145.0" text="NumberOfGenerations" />
-                                                      <TextField id="gaGenerations" fx:id="gaGenerations" layoutX="15.0" layoutY="172.0" text="50000" />
-                                                      <TextField id="gaMutationProbability" fx:id="gaMutationProbability" layoutX="14.0" layoutY="106.0" text="0.20" />
-                                                      <Label layoutX="22.0" layoutY="6.0" text="Initial Population Size" />
-                                                      <TextField id="gaInitialPopulationSize" fx:id="gaInitialPopulationSize" layoutX="14.0" layoutY="36.0" text="10" />
-                                                   </children>
-                                                </AnchorPane>
-                                             </content>
-                                          </TitledPane>
                                       </panes>
                                     </Accordion>
                                            </children>

@@ -8,13 +8,15 @@ public class SimulatedAnnealing {
 
         int costToBeat = SolverUtils.getHeuristicCost(r);
 
+        int x = 0;
         // terminate when it reaches max num of iterations or problem is solved.
-        for (int x = 0; x < maxNumOfIterations && costToBeat > 0; x++) {
+        while (x < maxNumOfIterations && costToBeat > 0) {
             r = makeMove(r, costToBeat, temperature);
             costToBeat = SolverUtils.getHeuristicCost(r);
             temperature = Math.max(temperature * coolingFactor, 0.01);
+            x++;
         }
-
+        System.out.println(x);
         return costToBeat == 0 ? r : null; // return solution if solved
     }
 

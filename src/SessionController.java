@@ -92,23 +92,6 @@ public class SessionController {
     }
 
     @FXML
-    void runLocalBeamSearch(ActionEvent event) {
-        LocalBeamSearch localBeamSearch = new LocalBeamSearch();
-
-        int[] res = localBeamSearch.solve(getNum(queens), getNum(lbIterations), getNum( lbStates));
-        showResult(res);
-    }
-
-    @FXML
-    void runGeneticAlgorithm(ActionEvent event) {
-
-        GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm();
-        int[] res = geneticAlgorithm.solve(getNum(queens), getNum(gaInitialPopulationSize), getDouble(gaMutationProbability), getNum(gaGenerations));
-
-        showResult(res);
-    }
-
-    @FXML
     void initialize() {
         assert mainWordPane != null : "fx:id=\"mainWordPane\" was not injected: check your FXML file 'session.fxml'.";
         assert saTemperature != null : "fx:id=\"saTemperature\" was not injected: check your FXML file 'session.fxml'.";
