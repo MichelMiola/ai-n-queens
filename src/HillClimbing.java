@@ -42,7 +42,7 @@ public class HillClimbing {
                 r = SolverUtils.generateRandomState(n);
 
         }
-        System.out.println("Iterações para resolução Hill Climbing: " + x);
+        System.out.println("Rainhas "+ n + " iterações para resolução Hill Climbing: " + x);
         return costToBeat == 0 ? r : null; // return solution if solved
     }
 

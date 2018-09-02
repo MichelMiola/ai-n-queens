@@ -4,6 +4,7 @@
 public class SimulatedAnnealing {
 
     public int[] solve(int n, int maxNumOfIterations, double temperature, double coolingFactor) {
+
         int[] r = SolverUtils.generateRandomState(n);
 
         int costToBeat = SolverUtils.getHeuristicCost(r);
@@ -16,7 +17,7 @@ public class SimulatedAnnealing {
             temperature = Math.max(temperature * coolingFactor, 0.01);
             x++;
         }
-        System.out.println("Iterações para resolução Simulated Annealing: " + x);
+        System.out.println("Rainhas "+ n + " iterações para resolução Simulated Annealing: " + x + " / Temperatura: " + temperature + " / Fator de resfriamento: " + coolingFactor);
         return costToBeat == 0 ? r : null; // return solution if solved
     }
 
