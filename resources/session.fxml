@@ -43,7 +43,7 @@
                                        <bottom>
                                           <HBox alignment="CENTER" prefHeight="45.0" prefWidth="448.0" spacing="15.0" BorderPane.alignment="CENTER">
                                              <children>
-                                                <Label text="Number of Queens" />
+                                                <Label text="Número de Rainhas" />
                                                 <TextField fx:id="queens" prefHeight="39.0" prefWidth="90.0" text="8" />
                                              </children>
                                              <BorderPane.margin>

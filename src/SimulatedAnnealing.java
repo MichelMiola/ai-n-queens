@@ -16,7 +16,7 @@ public class SimulatedAnnealing {
             temperature = Math.max(temperature * coolingFactor, 0.01);
             x++;
         }
-        System.out.println(x);
+        System.out.println("Iterações para resolução Simulated Annealing: " + x);
         return costToBeat == 0 ? r : null; // return solution if solved
     }
 

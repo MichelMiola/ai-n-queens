@@ -10,8 +10,9 @@ public class HillClimbing {
         int[] r = SolverUtils.generateRandomState(n);
         int costToBeat = SolverUtils.getHeuristicCost(r);
 
+        int x = 0;
         // terminate when it reaches max num of iterations or problem is solved.
-        for (int x = 0; x < maxNumOfIterations && costToBeat > 0; x++) {
+        while (x < maxNumOfIterations && costToBeat > 0) {
 
             boolean flag = true;
             int tempCostToBeat = costToBeat;
@@ -33,6 +34,7 @@ public class HillClimbing {
                         break;
                     }
                 }
+                x++;
             }
 
             // if it gets stuck at local maxima
@@ -40,7 +42,7 @@ public class HillClimbing {
                 r = SolverUtils.generateRandomState(n);
 
         }
-
+        System.out.println("Iterações para resolução Hill Climbing: " + x);
         return costToBeat == 0 ? r : null; // return solution if solved
     }
 
